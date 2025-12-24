@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <style>
+    body {
+      background: #ffffff;
+      padding: 20px;
+    }
+
+    .center-logo {
+      max-width: 220px;
+      margin: auto;
+      display: block;
+    }
+
+
+    .center-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
+
+    .center-box h2 {
+      font-size: 24px;
+      line-height: 1.4;
+    }
+
+    .skill-logo {
+      width: 120px;
+      display: block;
+      margin: auto;
+    }
+
+    .skill-title {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .map-container {
+      position: relative;
+      height: 700px;
+    }
+
+    .skill-box {
+      position: absolute;
+      text-align: center;
+      z-index: 3;
+    }
+
+
+    .html {
+      left: 8%;
+      top: 12%;
+    }
+
+    .css {
+      left: 25%;
+      top: 0%;
+    }
+
+    .js {
+      left: 0%;
+      top: 40%;
+    }
+
+    .jquery {
+      left: 15%;
+      top: 60%;
+    }
+
+    .bootstrap {
+      right: 15%;
+      top: 8%;
+    }
+
+    .sass {
+      right: 5%;
+      top: 40%;
+    }
+
+    .vue {
+      right: 20%;
+      top: 70%;
+    }
+
+
+    .line {
+      position: absolute;
+
+      height: 2px;
+      background: #cccccc;
+      left: 50%;
+      top: 50%;
+      transform-origin: left center;
+      z-index: 1;
+    }
+
+
+    .line-html {
+      transform: rotate(-160deg);
+      width: 290px;
+    }
+
+    .line-css {
+      transform: rotate(-130deg);
+      width: 250px;
+    }
+
+    .line-js {
+      transform: rotate(175deg);
+      width: 270px;
+    }
+
+    .line-jquery {
+      transform: rotate(150deg);
+      width: 270px;
+    }
+
+    .line-bootstrap {
+      transform: rotate(-35deg);
+      width: 270px;
+    }
+
+    .line-sass {
+      transform: rotate(-5deg);
+      width: 270px;
+    }
+
+    .line-vue {
+      transform: rotate(32deg);
+      width: 240px;
+    }
+
+
+    @media (max-width: 768px) {
+
+      .map-container {
+        height: auto;
+      }
+
+      .center-box {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 0;
+        margin-bottom: 30px;
+      }
+
+      .skill-box {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        margin-bottom: 40px;
+      }
+
+      .center-logo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+
+      .line {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+    <div class="map-container">
+
+
+      <div class="center-box">
+        <img src="./images/wda.png" class="center-logo">
+        <h2 class="fw-bold mt-3">泰山職訓局<br>從零開始的網頁設計課程</h2>
+        <p class="mb-4">
+          轉職網頁開發人員 掌握就業必備職能<br>
+          由淺入深學習技術 強化職場的競爭力
+        </p>
+      </div>
+
+
+      <div class="line line-html"></div>
+      <div class="line line-css"></div>
+      <div class="line line-js"></div>
+      <div class="line line-jquery"></div>
+      <div class="line line-bootstrap"></div>
+      <div class="line line-sass"></div>
+      <div class="line line-vue"></div>
+
+
+      <div class="skill-box html">
+        <img src="./images/html.png" class="skill-logo">
+        <div class="skill-title">HTML</div>
+      </div>
+
+      <div class="skill-box css">
+        <img src="./images/css.png" class="skill-logo">
+        <div class="skill-title">CSS3</div>
+      </div>
+
+      <div class="skill-box js">
+        <img src="./images/js.png" class="skill-logo">
+        <div class="skill-title">JavaScript</div>
+      </div>
+
+      <div class="skill-box jquery">
+        <img src="./images/jq.png" class="skill-logo">
+        <div class="skill-title">jQuery</div>
+      </div>
+
+      <div class="skill-box bootstrap">
+        <img src="./images/bs.png" class="skill-logo">
+        <div class="skill-title">Bootstrap</div>
+      </div>
+
+      <div class="skill-box sass">
+        <img src="./images/sass.png" class="skill-logo">
+        <div class="skill-title">Sass</div>
+      </div>
+
+      <div class="skill-box vue">
+        <img src="./images/vue.png" class="skill-logo">
+        <div class="skill-title">Vue.js</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
